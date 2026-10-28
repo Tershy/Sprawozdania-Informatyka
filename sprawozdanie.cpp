@@ -134,9 +134,52 @@ int main() {
 
   // ==============G========================= //
 
+  float dolary, zlotowki;
+
+#define KURS 3.9467
+
+  cout << "Podaj wartosc w zlotowkach" << endl;
+  cin >> zlotowki;
+
+  dolary = zlotowki / KURS;
+
+  cout << "Wartosc w dolarach to:" << dolary << "$" << endl;
+
   // ==============H========================= //
+
+  float farenheit, celsius;
+
+  cout << "Podaj temperature w celsjuszach:";
+  cin >> celsius;
+
+  farenheit = celsius * 9.0 / 5 + 32;
+
+  cout << "Temperatura w stopniach farenheita:" << farenheit << endl;
 
   // ==============I========================= //
 
+  double litry, galony;
+
+#define LITRY_W_GALONIE 3.785
+
+  cout << "Podaj objetosc w litrach" << endl;
+  cin >> litry;
+
+  galony = litry / LITRY_W_GALONIE;
+  cout << "Objetosc w galonach:" << galony << endl;
+
   // ==============J========================= //
+
+  double funty, kilogramy;
+
+#define FUNTY_W_KG 2.2046
+
+  cout << "Podaj mase w kilogramach:";
+  cin >> kilogramy;
+
+  funty = kilogramy * FUNTY_W_KG;
+
+  cout << "Masa w funtach:" << funty << endl;
+
+  return 0;
 }
